@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Start Boostrap</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-expand-lg shadow bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bolder" href="index.html">Start Boostrap</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active fw-bolder"
+                  aria-current="page"
+                  href="#features"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link active fw-bolder" href="#download"
+                  >Download</a
+                >
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-5"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <i class="fa-regular fa-comment"></i>
+                  Send Feedback
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Modal -->
+    <div
+      class="modal fade mt-5"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white p-4" id="exampleModalLabel">
+              Send Feedback
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="https://formsubmit.co/eemirhanshn@gmail.com" method="POST">
+            <input
+              type="text"
+              class="form-control p-3 mt-2"
+              id="fullName"
+              placeholder="Adınızı Giriniz..."
+            />
+            <input
+              type="email"
+              class="form-control  p-3 mt-2"
+              id="emailAdress"
+              placeholder="Mail adresinizi giriniz..."
+            />
+            <input
+              type="tel"
+              class="form-control  p-3 mt-2"
+              id="exampleFormControlInput1"
+              placeholder="Telefon numaranızı giriniz..."
+            />
+            <textarea
+              class="form-control mt-2"
+              id="exampleFormControlTextarea1"
+              rows="6"
+              placeholder="Mesajınızı giriniz..."
+            ></textarea>
+          </form>
+          </div>
+          <div class="modal-footer ms-2">
+            
+            <button type="button" class="btn btn-primary col-12 rounded-5 btn-lg">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hero-section -->
+    <div class="d-flex mx-5 mb*5 mt-5 pt-5">
+      <div class="col-lg-6 pt-5">
+        <h1 class="hero-section-heading">
+          Showcase <br />
+          your app <br />
+          beautifully.
+        </h1>
+        <div>
+          <p class="text-muted fw-normal mb-5 pt-4 fs-5">
+            Launch your mobile app landing page faster with this <br />
+            free, open source theme from Start Bootstrap!
+          </p>
+        </div>
+        <div class="d-flex flex-column flex-lg-row align-items-center">
+          <a href="">
+            <img src="assetss/img/google.png" width="200px" />
+          </a>
+          <a href="">
+            <img src="assetss/img/apple.png" width="160px" />
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center">
+        <div class="circle-container">
+          <i class="fa-solid fa-xmark first-x-class fs-3"></i>
+          <img
+            src="assetss/img/phone-screen.png"
+            width="270px"
+            class="phone-image"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- testimonial -->
+    <div
+      class="testimonial-container row justify-content-center px-5 pt-5 pb-5 mb-5"
+    >
+      <div class="fs-1 text-white fw-medium col-lg-8 text-center pb-2">
+        "An intuitive solution to a common problem that we all face, wrapped up
+        in a single app!"
+      </div>
+      <div class="col-lg-5 d-flex justify-content-center pt-3">
+        <img  id="features" src="assetss/img/tnw-logo.svg" width="100" />
+      </div>
+    </div>
+    <!-- app features -->
+    <div id="features" class="px-5 d-flex">
+      <div class="col-lg-6 d-flex ps-5">
+        <div class="circle-container-2">
+        <img
+          src="assetss/img/phone-screen.png"
+          width="260px"
+          class="circle-img-2"
+        />
+        <i class="fa-solid fa-xmark fs-3 second-x-class"></i>
+      </div>
+    </div>
+      <div>
+        <div class="row">
+          <div class="col-lg-6">
+            <i
+              class="fa-solid fa-mobile-screen-button fs-1 d-flex justify-content-center mb-2 text-primary"
+            ></i>
+            <h3 class="d-flex justify-content-center fw-bolder">
+              Device Mockups
+            </h3>
+            <p
+              class="d-flex justify-content-center text-center text-muted fs-5"
+            >
+              Ready to use HTML/CSS device mockups, no Photoshop required!
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <i
+              class="fa-solid fa-mobile-screen-button fs-1 d-flex justify-content-center mb-2 text-primary"
+            ></i>
+            <h3 class="d-flex justify-content-center fw-bolder">
+              Device Mockups
+            </h3>
+            <p
+              class="d-flex justify-content-center text-center text-muted fs-5"
+            >
+              Ready to use HTML/CSS device mockups, no Photoshop required!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <i
+              class="fa-solid fa-mobile-screen-button fs-1 d-flex justify-content-center mb-2 text-primary"
+            ></i>
+            <h3 class="d-flex justify-content-center fw-bolder">
+              Device Mockups
+            </h3>
+            <p
+              class="d-flex justify-content-center text-center text-muted fs-5"
+            >
+              Ready to use HTML/CSS device mockups, no Photoshop required!
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <i
+              class="fa-solid fa-mobile-screen-button fs-1 d-flex justify-content-center mb-2 text-primary"
+            ></i>
+            <h3 class="d-flex justify-content-center fw-bolder">
+              Device Mockups
+            </h3>
+            <p
+              class="d-flex justify-content-center text-center text-muted fs-5"
+            >
+              Ready to use HTML/CSS device mockups, no Photoshop required!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- web design -->
+    <div class="bg-light pb-5 mt-5">
+      <div class="row d-flex align-items-center justify-content-center px-5">
+        <div class="col-lg-6 col-12">
+          <h1 class="web-design-title">Enter a new age of web design</h1>
+          <p class="d-flex align-items-center text-muted fs-5 mt-4">
+            This section is perfect for featuring some information about your
+            application, why it was built, the problem it solves, or anything
+            else! There's plenty of space for text here, so don't worry about
+            writing too much.
+          </p>
+        </div>
+        <div class="col-lg-6 col-12">
+          <img
+            src="assetss/img/photo-1620207418302-439b387441b0.jpeg"
+            width="580px"
+            class="img-rounded img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- start building -->
+    <div class="start-building-img-container pt-5">
+      <div class="text-white px-5 start-building-content pt-5">
+        <h1 class="d-flex pt-5 start-building-title">
+          Stop waiting. <br />
+          Start building.
+        </h1>
+        <button class="btn btn-outline-light pt-3 rounded-5 mt-5">
+          Download for free
+        </button>
+      </div>
+    </div>
+    <!-- get app now -->
+    <div class="get-app-container p-5">
+      <h1 id="download"
+        class="d-flex flex-column flex-column-row align-items-center justify-content-center text-white"
+      >
+        Get the app now
+      </h1>
+      <div
+        class="d-flex flex-column-row align-items-center justify-content-center p-5"
+      >
+        <a href="" class="mx-2">
+          <img src="assetss/img/s1.svg" />
+        </a>
+        <a href="" class="mx-2">
+          <img src="assetss/img/google.png" width="135px" />
+        </a>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-black p-5 text-center">
+      <small>
+        <div class="text-white-50 fs-4">Emirhan Şahin</div>
+        <a href="" class="text-white-50 mx-2 kvkk-text">Privacy</a>
+        <a href="" class="text-white-50 mx-2 kvkk-text">Terms</a>
+        <a href="" class="text-white-50 mx-2 kvkk-text">FAQ</a>
+      </small>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

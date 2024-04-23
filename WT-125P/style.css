@@ -1,0 +1,70 @@
+.navbar {
+  background-color: #2c3e50 !important;
+}
+.navbar-brand {
+  color: white !important;
+  font-size: 28px !important;
+  font-weight: 600px !important;
+}
+.nav-link {
+  padding: 2rem !important;
+}
+.profile {
+  background-color: #1abc9c;
+  padding-top: 200px;
+  padding-bottom: 6rem;
+}
+.strbootstrap {
+  color: white;
+}
+.grafk {
+  color: white;
+}
+.portfoio-heading {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  color: #2c3e50;
+}
+.img-stylee {
+  border-radius: 8px;
+}
+.about-container {
+  background-color: #1abc9c;
+}
+.about-heading{
+    color: white;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    font: weight 800;       
+}
+
+.about-text{
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: white;
+}
+.my-button{
+    padding: 1rem 1.75rem !important;
+    font-size: 20px !important;
+    border: solid white 2px !important;
+}
+.footer-container{
+    background-color: #2c3e50;
+}
+.footer-heading{
+    color: white;
+    font-size: 1.5rem;
+}
+.footer-text{
+    color: white;
+    font-size: 1.25rem;
+    font: weight 300px;;
+}
+.bootstrap-link{
+    color: #1abc9c ;
+}
+.copyryght-container{
+    background-color:#1A252F;
+}
+
+   

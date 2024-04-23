@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+.main-header{
+    font-size: 48px;
+}
+.second-header-title{
+    font-weight: 400;
+    line-height: 32px;
+    color: rgb(192,218,255);
+}
